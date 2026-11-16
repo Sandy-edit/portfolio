@@ -5,11 +5,9 @@ export function Footer() {
   return (
     <footer className="w-full bg-[#0e1614] text-[#f4efe6] pt-16 pb-8 px-8 md:px-16 border-t border-[#c5a059]/20">
       <div className="max-w-7xl mx-auto">
-        
-        {/* Top Footer Columns Grid */}
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-16">
-          
-          {/* Column 1: Brand Info (Spans 2 columns on large screens) */}
+
           <div className="lg:col-span-2">
             <h3 className="text-xs font-bold tracking-[0.25em] uppercase text-[#c5a059] mb-2">
               THE OWL'S VAULT
@@ -21,7 +19,6 @@ export function Footer() {
               Elevating the tabletop experience for the discerning Indian player and collector.
             </p>
 
-            {/* Social Icons Placeholder */}
             <div className="flex items-center gap-3">
               {["IG", "TW", "YT", "FB", "PIN"].map((social, index) => (
                 <div
@@ -34,7 +31,6 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Column 2: Destinations / Links */}
           <div>
             <h4 className="text-xs font-bold tracking-widest uppercase text-[#c5a059] mb-4">
               Destinations
@@ -49,7 +45,6 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Column 3: Support */}
           <div>
             <h4 className="text-xs font-bold tracking-widest uppercase text-[#c5a059] mb-4">
               Support
@@ -63,7 +58,6 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Column 4: Stay Updated (Newsletter) */}
           <div>
             <h4 className="text-xs font-bold tracking-widest uppercase text-[#c5a059] mb-4">
               Stay Updated
@@ -91,7 +85,6 @@ export function Footer() {
 
         </div>
 
-        {/* WhatsApp Community Banner Bar */}
         <div className="bg-[#14221f] border border-[#c5a059]/30 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6 mb-12">
           <div className="flex items-center gap-4 text-center md:text-left">
             <div className="w-12 h-12 rounded-full bg-[#c5a059]/15 border border-[#c5a059]/40 flex items-center justify-center shrink-0 mx-auto md:mx-0">
@@ -109,7 +102,6 @@ export function Footer() {
 </button>
         </div>
 
-        {/* Bottom Copyright & Legal Bar */}
         <div className="flex flex-col sm:flex-row items-center justify-between text-[11px] text-stone-500 pt-6 border-t border-[#f4efe6]/10 gap-4">
           <p>© 2026 The Owl's Vault · Serving all of India, based in Bengaluru since 2025</p>
           <div className="flex gap-6">

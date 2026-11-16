@@ -3,12 +3,11 @@ import React from "react";
 export function Herocard() {
   return (
     <div className="w-full bg-[#160c09]" style={{paddingTop: '4rem'}}>
-      {/* Hero Banner Section */}
+    
       <section className="relative w-full min-h-[500px] flex items-center bg-cover bg-center overflow-hidden bg-[url('https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?auto=format&fit=crop&w=1600&q=80')]">
-        {/* Dark gradient overlay */}
+       
         <div className="absolute inset-0 bg-gradient-to-r from-[#160c09]/95 via-[#160c09]/80 to-transparent" />
 
-        {/* Main Content */}
         <div className="relative z-10 max-w-7xl mx-auto w-full px-8 md:px-16">
           <div className="max-w-xl">
             {/* Eyebrow */}
@@ -16,7 +15,6 @@ export function Herocard() {
               FRESH DROPS · THIS WEEK
             </p>
 
-            {/* Heading */}
             <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight mb-4 text-[#faf5f0]">
               <span className="block">New Arrivals,</span>
               <span className="block italic bg-gradient-to-r from-[#f8a5b5] to-[#e63956] bg-clip-text text-transparent">
@@ -24,12 +22,10 @@ export function Herocard() {
               </span>
             </h1>
 
-            {/* Subtitle */}
             <p className="text-sm md:text-base text-stone-300 mb-8">
               The latest additions to the Owls vault — these go fast.
             </p>
 
-            {/* Button */}
             <button className="button">
          Shop New Arrivals
           <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
@@ -44,12 +40,12 @@ export function Herocard() {
         </div>
       </section>
 
-      {/* Bottom Trust & Feature Bar */}
+      
       <div className="w-full bg-[#1c0f0c] border-t border-b border-[#e63956]/20">
         <div className="max-w-7xl mx-auto px-8 md:px-16 py-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-0 lg:divide-x lg:divide-[#faf5f0]/10">
             
-            {/* Feature 1: Free Shipping */}
+          
             <div className="flex items-center gap-4 lg:justify-center lg:px-6">
               <div className="w-11 h-11 rounded-full bg-[#e63956]/15 border border-[#e63956]/40 flex items-center justify-center shrink-0">
                 <svg className="w-5 h-5 text-[#e63956]" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
@@ -62,7 +58,7 @@ export function Herocard() {
               </div>
             </div>
 
-            {/* Feature 2: Secure Checkout */}
+        
             <div className="flex items-center gap-4 lg:justify-center lg:px-6">
               <div className="w-11 h-11 rounded-full bg-[#e63956]/15 border border-[#e63956]/40 flex items-center justify-center shrink-0">
                 <svg className="w-5 h-5 text-[#e63956]" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
@@ -75,7 +71,6 @@ export function Herocard() {
               </div>
             </div>
 
-            {/* Feature 3: Fast Delivery */}
             <div className="flex items-center gap-4 lg:justify-center lg:px-6">
               <div className="w-11 h-11 rounded-full bg-[#e63956]/15 border border-[#e63956]/40 flex items-center justify-center shrink-0">
                 <svg className="w-5 h-5 text-[#e63956]" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
@@ -88,7 +83,6 @@ export function Herocard() {
               </div>
             </div>
 
-            {/* Feature 4: Happy Gamers */}
             <div className="flex items-center gap-4 lg:justify-center lg:px-6">
               <div className="w-11 h-11 rounded-full bg-[#e63956]/15 border border-[#e63956]/40 flex items-center justify-center shrink-0">
                 <svg className="w-5 h-5 text-[#e63956]" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">

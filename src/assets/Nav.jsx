@@ -1,17 +1,16 @@
-
 import React, { useState } from 'react';
 import './navbar.css';
 import logo from "../images/logo.png";
 
 export default function Navbar() {
-  const [activeDropdown, setActiveDropdown] = useState(null);
+  const [active, setActive] = useState(null);
 
-  const handleMouseEnter = (menu) => {
-    setActiveDropdown(menu);
+  const enter = (name) => {
+    setActive(name);
   };
 
-  const handleMouseLeave = () => {
-    setActiveDropdown(null);
+  const leave = () => {
+    setActive(null);
   };
 
   return (
@@ -21,14 +20,14 @@ export default function Navbar() {
       </div>
       
       <ul className="navbar-links">
-        {/* Shop Dropdown with Multiple Columns */}
+        {/* Shop Dropdown */}
         <li 
           className="dropdown"
-          onMouseEnter={() => handleMouseEnter('shop')}
-          onMouseLeave={handleMouseLeave}
+          onMouseEnter={() => enter('shop')}
+          onMouseLeave={leave}
         >
           <a href="#shop" className="dropdown-toggle">Shop ▾</a>
-          {activeDropdown === 'shop' && (
+          {active === 'shop' && (
             <div className="dropdown-menu mega-menu">
               <div className="dropdown-column">
                 <h4>By Type</h4>
@@ -59,14 +58,13 @@ export default function Navbar() {
           )}
         </li>
 
-        {/* Our Story Dropdown */}
         <li 
           className="dropdown"
-          onMouseEnter={() => handleMouseEnter('story')}
-          onMouseLeave={handleMouseLeave}
+          onMouseEnter={() => enter('story')}
+          onMouseLeave={leave}
         >
           <a href="#story" className="dropdown-toggle">Our Story ▾</a>
-          {activeDropdown === 'story' && (
+          {active === 'story' && (
             <ul className="dropdown-menu simple-menu">
               <li><a href="#about">About Us</a></li>
               <li><a href="#team">Our Team</a></li>
@@ -87,3 +85,4 @@ export default function Navbar() {
     </nav>
   );
 }
+

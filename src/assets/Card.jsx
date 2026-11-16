@@ -4,8 +4,7 @@ export function CategoryCards() {
   return (
     <section className="w-full bg-[#160c09] py-16 px-8 md:px-16">
       <div className="max-w-7xl mx-auto">
-        
-        {/* Section Header */}
+
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-10">
           <div>
             <div className="w-8 h-[2px] bg-[#D49A9A] mb-3" />
@@ -25,10 +24,8 @@ export function CategoryCards() {
           </a>
         </div>
 
-        {/* Category Cards Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          
-          {/* Card 1: Deep Strategy */}
+
           <div
             style={{
               backgroundImage: `url('https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?auto=format&fit=crop&w=800&q=80')`,
@@ -55,7 +52,6 @@ export function CategoryCards() {
             </div>
           </div>
 
-          {/* Card 2: Gateway Games */}
           <div
             style={{
               backgroundImage: `url('https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?auto=format&fit=crop&w=800&q=80')`,
@@ -82,7 +78,6 @@ export function CategoryCards() {
             </div>
           </div>
 
-          {/* Card 3: Family Games */}
           <div
             style={{
               backgroundImage: `url('https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80')`,
@@ -109,7 +104,6 @@ export function CategoryCards() {
             </div>
           </div>
 
-          {/* Card 4: Party Games */}
           <div
             style={{
               backgroundImage: `url('https://images.unsplash.com/photo-1532375810709-75b1da00537c?auto=format&fit=crop&w=800&q=80')`,
